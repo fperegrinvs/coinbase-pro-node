@@ -78,7 +78,7 @@ export class RESTClient extends EventEmitter {
       retryDelay: (retryCount: number, error: AxiosError) => {
         const errorMessage = getErrorMessage(error);
         this.logger(
-          `#${retryCount} There was an error querying "${error.config.baseURL}${error.config.url}": ${errorMessage}`
+          `#${retryCount} There was an error querying "${error.config?.baseURL}${error.config?.url}": ${errorMessage}`
         );
         /**
          * Rate limits:
@@ -102,6 +102,7 @@ export class RESTClient extends EventEmitter {
         requestPath,
       });
 
+      // @ts-ignore
       config.headers = {
         ...config.headers,
         'CB-ACCESS-KEY': signedRequest.key,

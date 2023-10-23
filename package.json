@@ -1,11 +1,11 @@
-{
+{ 
   "bugs": {
-    "url": "https://github.com/bennycode/coinbase-pro-node/issues"
+    "url": "https://github.com/fperegrinvs/coinbase-pro-node/issues"
   },
   "dependencies": {
     "@types/node": "20.5.7",
     "@types/ws": "8.5.5",
-    "axios": "0.27.2",
+    "axios": "1.5.1",
     "axios-retry": "3.7.0",
     "buffer": "6.0.3",
     "bufferutil": "4.0.7",
@@ -14,7 +14,7 @@
     "ws": "8.13.0",
     "zod": "3.21.4"
   },
-  "description": "Coinbase Pro API for Node.js, written in TypeScript and covered by tests.",
+  "description": "Deno port for the Coinbase Pro API for Node.js, written in TypeScript and covered by tests.",
   "devDependencies": {
     "@types/jasmine": "4.3.5",
     "@typescript-eslint/eslint-plugin": "5.62.0",
@@ -49,7 +49,7 @@
     "!/dist/demo",
     "!/dist/test"
   ],
-  "homepage": "https://bennycode.com/coinbase-pro-node",
+  "homepage": "",
   "keywords": [
     "API",
     "Bitcoin",
@@ -68,11 +68,11 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "name": "coinbase-pro-node",
+  "name": "coinbase-pro-deno",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bennycode/coinbase-pro-node.git"
+    "url": "git+https://github.com/fperegrinvs/coinbase-pro-node.git"
   },
   "scripts": {
     "build": "tsc",
@@ -105,5 +105,5 @@
     "test:types": "yarn lint:types",
     "prepare": "husky install"
   },
-  "version": "7.0.0"
+  "version": "1.0.0"
 }
